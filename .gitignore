@@ -1,0 +1,8 @@
+# ignore my local library
+/.venv
+
+# ignore my IDE settings
+/.idea
+
+# ignore my git commit message-file
+/commit_message.txt
