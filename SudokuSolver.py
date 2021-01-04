@@ -21,7 +21,7 @@ black = (0, 0, 0)
 light_green = (0, 255, 0, 0.1)
 
 tile_size = grid_size / 9
-pos = [1, 2]
+pos = [0, 0]
 is_invalid_input = False
 grid_font = pygame.font.SysFont("", 48)
 message_font = pygame.font.SysFont("", 32)
@@ -30,10 +30,13 @@ grid = None
 grid_text_color = None
 # button = pu.button((150, 250, 150), 100, 650, 150, 50, "Solve")
 
+
 def init_grid():
     global grid, grid_text_color
     grid = [[0] * 9 for _ in range(9)]
     grid_text_color = [[blue] * 9 for _ in range(9)]
+    global is_invalid_input
+    is_invalid_input = False
 
 
 def show_text():
